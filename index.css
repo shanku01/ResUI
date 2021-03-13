@@ -56,11 +56,12 @@ body{
     border-radius: var(--small);
     background-color: var(--offRed);
 }
+
 .heading{
     font-size: var(--large);
     width: 1000px;
-    padding-top: 150px;
-    padding-left: 370px;
+    top: 150px;
+    left: 370px;
     line-height: 100px;
     position: fixed;
 }
@@ -87,8 +88,8 @@ body{
     display: flex;
     width: 100%;
     height: 200px;
-    padding-left: 350px;
-    padding-top: 400px;
+    left: 350px;
+    top: 400px;
     position: fixed;
 }
 .box{
@@ -98,7 +99,7 @@ body{
     text-align: center;
     margin: 20px;
     border-radius: 20px;
-    box-shadow: 1px 1px 20px 1px rgb(218, 209, 209);
+    box-shadow: 1px 1px 30px 1px rgb(206, 203, 203);
     background: var(--white);
 }
 
@@ -111,4 +112,81 @@ img{
 
 .box p{
     margin: 20px;
+}
+
+@media screen and (max-width: 600px){
+    :root{
+        --small: 15px;
+        --large: 50px;
+        --medium: 25px;
+    }
+
+    .side-bar{
+        display: none;
+    }
+
+    .title{
+        top: 20px;
+        left: 100px;
+        position: relative;
+    }
+
+    .short{
+        display: none;
+    }
+
+    .heading{
+        font-size: var(--large);
+        position: relative;
+        line-height: var(--large);
+        top: 70px;
+        left: 5%;
+        padding: 0px;
+    }
+
+    .article{
+        top:600px;
+        right: 1px;
+        left: 20px;
+        width: 300px;
+        position: relative;
+    }
+
+    .line{
+        width: var(--large);
+    }
+
+    .button{
+        display: none;
+    }
+
+    .image-block{
+        float: left;
+        width: 400px;
+        height: 400px;
+        left: 30px;
+        top: 5px;
+        position: relative;
+    }
+
+    .box{
+        width: 150px;
+        height: 200px;
+        margin: 20px;
+    }
+
+    img{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        padding-top: 20px;
+    }
+    
+    .box p{
+        margin: 20px;
+    }
+
+    .none{
+        display: none;
+    }
 }
